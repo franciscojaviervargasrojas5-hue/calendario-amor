@@ -15,8 +15,10 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('fondo.jpg.jpeg');
-    background-size: cover;
+    /* Usamos 'contain' en lugar de 'cover' para que se vea toda la foto completa */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('fondo.jpg.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
